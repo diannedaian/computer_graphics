@@ -1,7 +1,7 @@
 CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.o: \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/examples/imgui_impl_opengl3.cpp \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imconfig.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/examples/imgui_impl_opengl3.cpp \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imconfig.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -115,7 +115,7 @@ CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.o:
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_dev_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_mode_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/examples/imgui_impl_opengl3.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/examples/imgui_impl_opengl3.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h \
@@ -125,5 +125,5 @@ CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.o:
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_seek_set.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_ctermid.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_off_t.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glad/include/glad/glad.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glad/include/KHR/khrplatform.h
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glad/include/glad/glad.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glad/include/KHR/khrplatform.h

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glfw-3.3.2/include -I/Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glfw-3.3.2/src -I/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/external/src/glfw-3.3.2/src
+C_INCLUDES = -I/Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glfw-3.3.2/include -I/Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glfw-3.3.2/src -I/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/external/src/glfw-3.3.2/src
 
 C_FLAGSarm64 = -O3 -DNDEBUG -std=gnu99 -arch arm64 -fPIC -Wall
 

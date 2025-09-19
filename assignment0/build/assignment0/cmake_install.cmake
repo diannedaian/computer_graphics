@@ -1,4 +1,4 @@
-# Install script for directory: /Users/dianne/Desktop/MIT/6.4400/assignment0
+# Install script for directory: /Users/dianne/Desktop/MIT/computer_graphics/assignment0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,14 +39,14 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/external/src/glfw-3.3.2/cmake_install.cmake")
+  include("/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/external/src/glfw-3.3.2/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/install_local_manifest.txt"
+  file(WRITE "/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -62,6 +62,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

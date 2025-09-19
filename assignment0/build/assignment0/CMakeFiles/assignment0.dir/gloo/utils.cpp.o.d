@@ -1,6 +1,6 @@
 CMakeFiles/assignment0.dir/gloo/utils.cpp.o: \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/utils.cpp \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/utils.hpp \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/utils.cpp \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/utils.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -783,8 +783,8 @@ CMakeFiles/assignment0.dir/gloo/utils.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glad/include/glad/glad.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glad/include/KHR/khrplatform.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glad/include/glad/glad.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glad/include/KHR/khrplatform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem

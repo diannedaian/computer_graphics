@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dianne/Desktop/MIT/6.4400/assignment0
+CMAKE_SOURCE_DIR = /Users/dianne/Desktop/MIT/computer_graphics/assignment0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0
+CMAKE_BINARY_DIR = /Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include external/src/glfw-3.3.2/CMakeFiles/uninstall.dir/compiler_depend.make
 include external/src/glfw-3.3.2/CMakeFiles/uninstall.dir/progress.make
 
 external/src/glfw-3.3.2/CMakeFiles/uninstall:
-	cd /Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/external/src/glfw-3.3.2 && /opt/homebrew/bin/cmake -P /Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/external/src/glfw-3.3.2/cmake_uninstall.cmake
+	cd /Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/external/src/glfw-3.3.2 && /opt/homebrew/bin/cmake -P /Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/external/src/glfw-3.3.2/cmake_uninstall.cmake
 
 external/src/glfw-3.3.2/CMakeFiles/uninstall.dir/codegen:
 .PHONY : external/src/glfw-3.3.2/CMakeFiles/uninstall.dir/codegen
@@ -81,10 +81,10 @@ external/src/glfw-3.3.2/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : external/src/glfw-3.3.2/CMakeFiles/uninstall.dir/build
 
 external/src/glfw-3.3.2/CMakeFiles/uninstall.dir/clean:
-	cd /Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/external/src/glfw-3.3.2 && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/external/src/glfw-3.3.2 && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : external/src/glfw-3.3.2/CMakeFiles/uninstall.dir/clean
 
 external/src/glfw-3.3.2/CMakeFiles/uninstall.dir/depend:
-	cd /Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dianne/Desktop/MIT/6.4400/assignment0 /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glfw-3.3.2 /Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0 /Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/external/src/glfw-3.3.2 /Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/external/src/glfw-3.3.2/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dianne/Desktop/MIT/computer_graphics/assignment0 /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glfw-3.3.2 /Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0 /Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/external/src/glfw-3.3.2 /Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/external/src/glfw-3.3.2/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : external/src/glfw-3.3.2/CMakeFiles/uninstall.dir/depend
 

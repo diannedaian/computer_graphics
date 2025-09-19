@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dianne/Desktop/MIT/6.4400/assignment0
+CMAKE_SOURCE_DIR = /Users/dianne/Desktop/MIT/computer_graphics/assignment0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0
+CMAKE_BINARY_DIR = /Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0
 
 # Include any dependencies generated for this target.
 include CMakeFiles/assignment0.dir/depend.make
@@ -73,536 +73,536 @@ CMakeFiles/assignment0.dir/codegen:
 .PHONY : CMakeFiles/assignment0.dir/codegen
 
 CMakeFiles/assignment0.dir/gloo/Application.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/Application.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Application.cpp
+CMakeFiles/assignment0.dir/gloo/Application.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Application.cpp
 CMakeFiles/assignment0.dir/gloo/Application.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/assignment0.dir/gloo/Application.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/Application.cpp.o -MF CMakeFiles/assignment0.dir/gloo/Application.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/Application.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/assignment0.dir/gloo/Application.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/Application.cpp.o -MF CMakeFiles/assignment0.dir/gloo/Application.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/Application.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Application.cpp
 
 CMakeFiles/assignment0.dir/gloo/Application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/Application.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Application.cpp > CMakeFiles/assignment0.dir/gloo/Application.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Application.cpp > CMakeFiles/assignment0.dir/gloo/Application.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/Application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/Application.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Application.cpp -o CMakeFiles/assignment0.dir/gloo/Application.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Application.cpp -o CMakeFiles/assignment0.dir/gloo/Application.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/Image.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/Image.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Image.cpp
+CMakeFiles/assignment0.dir/gloo/Image.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Image.cpp
 CMakeFiles/assignment0.dir/gloo/Image.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/assignment0.dir/gloo/Image.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/Image.cpp.o -MF CMakeFiles/assignment0.dir/gloo/Image.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/Image.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/assignment0.dir/gloo/Image.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/Image.cpp.o -MF CMakeFiles/assignment0.dir/gloo/Image.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/Image.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Image.cpp
 
 CMakeFiles/assignment0.dir/gloo/Image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/Image.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Image.cpp > CMakeFiles/assignment0.dir/gloo/Image.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Image.cpp > CMakeFiles/assignment0.dir/gloo/Image.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/Image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/Image.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Image.cpp -o CMakeFiles/assignment0.dir/gloo/Image.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Image.cpp -o CMakeFiles/assignment0.dir/gloo/Image.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/InputManager.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/InputManager.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/InputManager.cpp
+CMakeFiles/assignment0.dir/gloo/InputManager.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/InputManager.cpp
 CMakeFiles/assignment0.dir/gloo/InputManager.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/assignment0.dir/gloo/InputManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/InputManager.cpp.o -MF CMakeFiles/assignment0.dir/gloo/InputManager.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/InputManager.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/InputManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/assignment0.dir/gloo/InputManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/InputManager.cpp.o -MF CMakeFiles/assignment0.dir/gloo/InputManager.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/InputManager.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/InputManager.cpp
 
 CMakeFiles/assignment0.dir/gloo/InputManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/InputManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/InputManager.cpp > CMakeFiles/assignment0.dir/gloo/InputManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/InputManager.cpp > CMakeFiles/assignment0.dir/gloo/InputManager.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/InputManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/InputManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/InputManager.cpp -o CMakeFiles/assignment0.dir/gloo/InputManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/InputManager.cpp -o CMakeFiles/assignment0.dir/gloo/InputManager.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/MeshLoader.cpp
+CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/MeshLoader.cpp
 CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.o -MF CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/MeshLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.o -MF CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/MeshLoader.cpp
 
 CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/MeshLoader.cpp > CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/MeshLoader.cpp > CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/MeshLoader.cpp -o CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/MeshLoader.cpp -o CMakeFiles/assignment0.dir/gloo/MeshLoader.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/Renderer.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/Renderer.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Renderer.cpp
+CMakeFiles/assignment0.dir/gloo/Renderer.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Renderer.cpp
 CMakeFiles/assignment0.dir/gloo/Renderer.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/assignment0.dir/gloo/Renderer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/Renderer.cpp.o -MF CMakeFiles/assignment0.dir/gloo/Renderer.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/Renderer.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/assignment0.dir/gloo/Renderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/Renderer.cpp.o -MF CMakeFiles/assignment0.dir/gloo/Renderer.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/Renderer.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Renderer.cpp
 
 CMakeFiles/assignment0.dir/gloo/Renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/Renderer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Renderer.cpp > CMakeFiles/assignment0.dir/gloo/Renderer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Renderer.cpp > CMakeFiles/assignment0.dir/gloo/Renderer.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/Renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/Renderer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Renderer.cpp -o CMakeFiles/assignment0.dir/gloo/Renderer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Renderer.cpp -o CMakeFiles/assignment0.dir/gloo/Renderer.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/Scene.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/Scene.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Scene.cpp
+CMakeFiles/assignment0.dir/gloo/Scene.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Scene.cpp
 CMakeFiles/assignment0.dir/gloo/Scene.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/assignment0.dir/gloo/Scene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/Scene.cpp.o -MF CMakeFiles/assignment0.dir/gloo/Scene.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/Scene.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/assignment0.dir/gloo/Scene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/Scene.cpp.o -MF CMakeFiles/assignment0.dir/gloo/Scene.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/Scene.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Scene.cpp
 
 CMakeFiles/assignment0.dir/gloo/Scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/Scene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Scene.cpp > CMakeFiles/assignment0.dir/gloo/Scene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Scene.cpp > CMakeFiles/assignment0.dir/gloo/Scene.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/Scene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Scene.cpp -o CMakeFiles/assignment0.dir/gloo/Scene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Scene.cpp -o CMakeFiles/assignment0.dir/gloo/Scene.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/SceneNode.cpp
+CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/SceneNode.cpp
 CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.o -MF CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/SceneNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.o -MF CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/SceneNode.cpp
 
 CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/SceneNode.cpp > CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/SceneNode.cpp > CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/SceneNode.cpp -o CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/SceneNode.cpp -o CMakeFiles/assignment0.dir/gloo/SceneNode.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/Transform.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/Transform.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Transform.cpp
+CMakeFiles/assignment0.dir/gloo/Transform.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Transform.cpp
 CMakeFiles/assignment0.dir/gloo/Transform.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/assignment0.dir/gloo/Transform.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/Transform.cpp.o -MF CMakeFiles/assignment0.dir/gloo/Transform.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/Transform.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Transform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/assignment0.dir/gloo/Transform.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/Transform.cpp.o -MF CMakeFiles/assignment0.dir/gloo/Transform.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/Transform.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Transform.cpp
 
 CMakeFiles/assignment0.dir/gloo/Transform.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/Transform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Transform.cpp > CMakeFiles/assignment0.dir/gloo/Transform.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Transform.cpp > CMakeFiles/assignment0.dir/gloo/Transform.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/Transform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/Transform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/Transform.cpp -o CMakeFiles/assignment0.dir/gloo/Transform.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/Transform.cpp -o CMakeFiles/assignment0.dir/gloo/Transform.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/VertexObject.cpp
+CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/VertexObject.cpp
 CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.o -MF CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/VertexObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.o -MF CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/VertexObject.cpp
 
 CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/VertexObject.cpp > CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/VertexObject.cpp > CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/VertexObject.cpp -o CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/VertexObject.cpp -o CMakeFiles/assignment0.dir/gloo/VertexObject.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/cameras/ArcBallCameraNode.cpp
+CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/cameras/ArcBallCameraNode.cpp
 CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.o -MF CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/cameras/ArcBallCameraNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.o -MF CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/cameras/ArcBallCameraNode.cpp
 
 CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/cameras/ArcBallCameraNode.cpp > CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/cameras/ArcBallCameraNode.cpp > CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/cameras/ArcBallCameraNode.cpp -o CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/cameras/ArcBallCameraNode.cpp -o CMakeFiles/assignment0.dir/gloo/cameras/ArcBallCameraNode.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/cameras/BasicCameraNode.cpp
+CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/cameras/BasicCameraNode.cpp
 CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.o -MF CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/cameras/BasicCameraNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.o -MF CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/cameras/BasicCameraNode.cpp
 
 CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/cameras/BasicCameraNode.cpp > CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/cameras/BasicCameraNode.cpp > CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/cameras/BasicCameraNode.cpp -o CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/cameras/BasicCameraNode.cpp -o CMakeFiles/assignment0.dir/gloo/cameras/BasicCameraNode.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/components/CameraComponent.cpp
+CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/components/CameraComponent.cpp
 CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.o -MF CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/components/CameraComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.o -MF CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/components/CameraComponent.cpp
 
 CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/components/CameraComponent.cpp > CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/components/CameraComponent.cpp > CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/components/CameraComponent.cpp -o CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/components/CameraComponent.cpp -o CMakeFiles/assignment0.dir/gloo/components/CameraComponent.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/components/RenderingComponent.cpp
+CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/components/RenderingComponent.cpp
 CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.o -MF CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/components/RenderingComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.o -MF CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/components/RenderingComponent.cpp
 
 CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/components/RenderingComponent.cpp > CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/components/RenderingComponent.cpp > CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/components/RenderingComponent.cpp -o CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/components/RenderingComponent.cpp -o CMakeFiles/assignment0.dir/gloo/components/RenderingComponent.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/components/ShadingComponent.cpp
+CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/components/ShadingComponent.cpp
 CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.o -MF CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/components/ShadingComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.o -MF CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/components/ShadingComponent.cpp
 
 CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/components/ShadingComponent.cpp > CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/components/ShadingComponent.cpp > CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/components/ShadingComponent.cpp -o CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/components/ShadingComponent.cpp -o CMakeFiles/assignment0.dir/gloo/components/ShadingComponent.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/debug/AxisNode.cpp
+CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/debug/AxisNode.cpp
 CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.o -MF CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/debug/AxisNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.o -MF CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/debug/AxisNode.cpp
 
 CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/debug/AxisNode.cpp > CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/debug/AxisNode.cpp > CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/debug/AxisNode.cpp -o CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/debug/AxisNode.cpp -o CMakeFiles/assignment0.dir/gloo/debug/AxisNode.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/debug/PrimitiveFactory.cpp
+CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/debug/PrimitiveFactory.cpp
 CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.o -MF CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/debug/PrimitiveFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.o -MF CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/debug/PrimitiveFactory.cpp
 
 CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/debug/PrimitiveFactory.cpp > CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/debug/PrimitiveFactory.cpp > CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/debug/PrimitiveFactory.cpp -o CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/debug/PrimitiveFactory.cpp -o CMakeFiles/assignment0.dir/gloo/debug/PrimitiveFactory.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/BindGuard.cpp
+CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/BindGuard.cpp
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.o -MF CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/BindGuard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.o -MF CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/BindGuard.cpp
 
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/BindGuard.cpp > CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/BindGuard.cpp > CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/BindGuard.cpp -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/BindGuard.cpp -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/BindableBuffer.cpp
+CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/BindableBuffer.cpp
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.o -MF CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/BindableBuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.o -MF CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/BindableBuffer.cpp
 
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/BindableBuffer.cpp > CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/BindableBuffer.cpp > CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/BindableBuffer.cpp -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/BindableBuffer.cpp -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/Framebuffer.cpp
+CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/Framebuffer.cpp
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.o -MF CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/Framebuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.o -MF CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/Framebuffer.cpp
 
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/Framebuffer.cpp > CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/Framebuffer.cpp > CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/Framebuffer.cpp -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/Framebuffer.cpp -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/Framebuffer.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/VertexArray.cpp
+CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/VertexArray.cpp
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.o -MF CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/VertexArray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.o -MF CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/VertexArray.cpp
 
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/VertexArray.cpp > CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/VertexArray.cpp > CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/VertexArray.cpp -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/VertexArray.cpp -o CMakeFiles/assignment0.dir/gloo/gl_wrapper/VertexArray.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/parsers/ObjParser.cpp
+CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/parsers/ObjParser.cpp
 CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.o -MF CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/parsers/ObjParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.o -MF CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/parsers/ObjParser.cpp
 
 CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/parsers/ObjParser.cpp > CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/parsers/ObjParser.cpp > CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/parsers/ObjParser.cpp -o CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/parsers/ObjParser.cpp -o CMakeFiles/assignment0.dir/gloo/parsers/ObjParser.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/shaders/PhongShader.cpp
+CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/shaders/PhongShader.cpp
 CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.o -MF CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/shaders/PhongShader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.o -MF CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/shaders/PhongShader.cpp
 
 CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/shaders/PhongShader.cpp > CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/shaders/PhongShader.cpp > CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/shaders/PhongShader.cpp -o CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/shaders/PhongShader.cpp -o CMakeFiles/assignment0.dir/gloo/shaders/PhongShader.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/shaders/ShaderProgram.cpp
+CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/shaders/ShaderProgram.cpp
 CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.o -MF CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/shaders/ShaderProgram.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.o -MF CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/shaders/ShaderProgram.cpp
 
 CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/shaders/ShaderProgram.cpp > CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/shaders/ShaderProgram.cpp > CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/shaders/ShaderProgram.cpp -o CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/shaders/ShaderProgram.cpp -o CMakeFiles/assignment0.dir/gloo/shaders/ShaderProgram.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/shaders/SimpleShader.cpp
+CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/shaders/SimpleShader.cpp
 CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.o -MF CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/shaders/SimpleShader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.o -MF CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/shaders/SimpleShader.cpp
 
 CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/shaders/SimpleShader.cpp > CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/shaders/SimpleShader.cpp > CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/shaders/SimpleShader.cpp -o CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/shaders/SimpleShader.cpp -o CMakeFiles/assignment0.dir/gloo/shaders/SimpleShader.cpp.s
 
 CMakeFiles/assignment0.dir/gloo/utils.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/gloo/utils.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/utils.cpp
+CMakeFiles/assignment0.dir/gloo/utils.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/utils.cpp
 CMakeFiles/assignment0.dir/gloo/utils.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/assignment0.dir/gloo/utils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/utils.cpp.o -MF CMakeFiles/assignment0.dir/gloo/utils.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/utils.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/assignment0.dir/gloo/utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/gloo/utils.cpp.o -MF CMakeFiles/assignment0.dir/gloo/utils.cpp.o.d -o CMakeFiles/assignment0.dir/gloo/utils.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/utils.cpp
 
 CMakeFiles/assignment0.dir/gloo/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/gloo/utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/utils.cpp > CMakeFiles/assignment0.dir/gloo/utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/utils.cpp > CMakeFiles/assignment0.dir/gloo/utils.cpp.i
 
 CMakeFiles/assignment0.dir/gloo/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/gloo/utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/utils.cpp -o CMakeFiles/assignment0.dir/gloo/utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/utils.cpp -o CMakeFiles/assignment0.dir/gloo/utils.cpp.s
 
 CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glad/src/glad.c
+CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glad/src/glad.c
 CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.o -MF CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.o.d -o CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glad/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.o -MF CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.o.d -o CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glad/src/glad.c
 
 CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glad/src/glad.c > CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glad/src/glad.c > CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.i
 
 CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glad/src/glad.c -o CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glad/src/glad.c -o CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.s
 
 CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui.cpp
+CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui.cpp
 CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.o -MF CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.o.d -o CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.o -MF CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.o.d -o CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui.cpp
 
 CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui.cpp > CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui.cpp > CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.i
 
 CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui.cpp -o CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui.cpp -o CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.s
 
 CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui_demo.cpp
+CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui_demo.cpp
 CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.o -MF CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.o.d -o CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.o -MF CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.o.d -o CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui_demo.cpp
 
 CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui_demo.cpp > CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui_demo.cpp > CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.i
 
 CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui_demo.cpp -o CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui_demo.cpp -o CMakeFiles/assignment0.dir/external/src/imgui/imgui_demo.cpp.s
 
 CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui_draw.cpp
+CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui_draw.cpp
 CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.o -MF CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.o.d -o CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui_draw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.o -MF CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.o.d -o CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui_draw.cpp
 
 CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui_draw.cpp > CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui_draw.cpp > CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.i
 
 CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui_draw.cpp -o CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui_draw.cpp -o CMakeFiles/assignment0.dir/external/src/imgui/imgui_draw.cpp.s
 
 CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui_widgets.cpp
+CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui_widgets.cpp
 CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.o -MF CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui_widgets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.o -MF CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui_widgets.cpp
 
 CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui_widgets.cpp > CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui_widgets.cpp > CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.i
 
 CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui_widgets.cpp -o CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui_widgets.cpp -o CMakeFiles/assignment0.dir/external/src/imgui/imgui_widgets.cpp.s
 
 CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/examples/imgui_impl_glfw.cpp
+CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/examples/imgui_impl_glfw.cpp
 CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.o -MF CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.o.d -o CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/examples/imgui_impl_glfw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.o -MF CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.o.d -o CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/examples/imgui_impl_glfw.cpp
 
 CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/examples/imgui_impl_glfw.cpp > CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/examples/imgui_impl_glfw.cpp > CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.i
 
 CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/examples/imgui_impl_glfw.cpp -o CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/examples/imgui_impl_glfw.cpp -o CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_glfw.cpp.s
 
 CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/examples/imgui_impl_opengl3.cpp
+CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/examples/imgui_impl_opengl3.cpp
 CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.o -MF CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/examples/imgui_impl_opengl3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.o -MF CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/examples/imgui_impl_opengl3.cpp
 
 CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/examples/imgui_impl_opengl3.cpp > CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/examples/imgui_impl_opengl3.cpp > CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.i
 
 CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/examples/imgui_impl_opengl3.cpp -o CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/examples/imgui_impl_opengl3.cpp -o CMakeFiles/assignment0.dir/external/src/imgui/examples/imgui_impl_opengl3.cpp.s
 
 CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/DirectionalLightToggle.cpp
+CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/DirectionalLightToggle.cpp
 CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.o -MF CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.o.d -o CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/DirectionalLightToggle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.o -MF CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.o.d -o CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/DirectionalLightToggle.cpp
 
 CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/DirectionalLightToggle.cpp > CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/DirectionalLightToggle.cpp > CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.i
 
 CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/DirectionalLightToggle.cpp -o CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/DirectionalLightToggle.cpp -o CMakeFiles/assignment0.dir/assignment_code/assignment0/DirectionalLightToggle.cpp.s
 
 CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/Lightmove.cpp
+CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/Lightmove.cpp
 CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.o -MF CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.o.d -o CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/Lightmove.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.o -MF CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.o.d -o CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/Lightmove.cpp
 
 CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/Lightmove.cpp > CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/Lightmove.cpp > CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.i
 
 CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/Lightmove.cpp -o CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/Lightmove.cpp -o CMakeFiles/assignment0.dir/assignment_code/assignment0/Lightmove.cpp.s
 
 CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/MeshViewerApp.cpp
+CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/MeshViewerApp.cpp
 CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.o -MF CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.o.d -o CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/MeshViewerApp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.o -MF CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.o.d -o CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/MeshViewerApp.cpp
 
 CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/MeshViewerApp.cpp > CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/MeshViewerApp.cpp > CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.i
 
 CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/MeshViewerApp.cpp -o CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/MeshViewerApp.cpp -o CMakeFiles/assignment0.dir/assignment_code/assignment0/MeshViewerApp.cpp.s
 
 CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/TeapotNode.cpp
+CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/TeapotNode.cpp
 CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.o -MF CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.o.d -o CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/TeapotNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.o -MF CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.o.d -o CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/TeapotNode.cpp
 
 CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/TeapotNode.cpp > CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/TeapotNode.cpp > CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.i
 
 CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/TeapotNode.cpp -o CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/TeapotNode.cpp -o CMakeFiles/assignment0.dir/assignment_code/assignment0/TeapotNode.cpp.s
 
 CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/main.cpp
+CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/main.cpp
 CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.o -MF CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.o.d -o CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.o -MF CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.o.d -o CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/main.cpp
 
 CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/main.cpp > CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/main.cpp > CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.i
 
 CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/assignment0/main.cpp -o CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/assignment0/main.cpp -o CMakeFiles/assignment0.dir/assignment_code/assignment0/main.cpp.s
 
 CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.o: CMakeFiles/assignment0.dir/flags.make
-CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.o: /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/common/helpers.cpp
+CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.o: /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/common/helpers.cpp
 CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.o: CMakeFiles/assignment0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.o -MF CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.o.d -o CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.o -c /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/common/helpers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.o -MF CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.o.d -o CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.o -c /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/common/helpers.cpp
 
 CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/common/helpers.cpp > CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/common/helpers.cpp > CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.i
 
 CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/6.4400/assignment0/assignment_code/common/helpers.cpp -o CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dianne/Desktop/MIT/computer_graphics/assignment0/assignment_code/common/helpers.cpp -o CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.s
 
 # Object files for target assignment0
 assignment0_OBJECTS = \
@@ -689,7 +689,7 @@ assignment0: CMakeFiles/assignment0.dir/assignment_code/common/helpers.cpp.o
 assignment0: CMakeFiles/assignment0.dir/build.make
 assignment0: external/src/glfw-3.3.2/src/libglfw3.a
 assignment0: CMakeFiles/assignment0.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Linking CXX executable assignment0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Linking CXX executable assignment0"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/assignment0.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -701,6 +701,6 @@ CMakeFiles/assignment0.dir/clean:
 .PHONY : CMakeFiles/assignment0.dir/clean
 
 CMakeFiles/assignment0.dir/depend:
-	cd /Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dianne/Desktop/MIT/6.4400/assignment0 /Users/dianne/Desktop/MIT/6.4400/assignment0 /Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0 /Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0 /Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/CMakeFiles/assignment0.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dianne/Desktop/MIT/computer_graphics/assignment0 /Users/dianne/Desktop/MIT/computer_graphics/assignment0 /Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0 /Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0 /Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/CMakeFiles/assignment0.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/assignment0.dir/depend
 

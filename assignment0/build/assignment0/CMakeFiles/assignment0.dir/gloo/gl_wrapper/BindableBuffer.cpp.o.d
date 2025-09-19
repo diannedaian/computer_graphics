@@ -1,8 +1,8 @@
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.o: \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/BindableBuffer.cpp \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/BindableBuffer.hpp \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glad/include/glad/glad.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glad/include/KHR/khrplatform.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/BindableBuffer.cpp \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/BindableBuffer.hpp \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glad/include/glad/glad.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glad/include/KHR/khrplatform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdint.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -33,7 +33,7 @@ CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_uintmax_t.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/IBindable.hpp \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/IBindable.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/functional.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_const.h \
@@ -132,7 +132,7 @@ CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindableBuffer.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/underlying_type.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/version \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/utils.hpp \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/utils.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/hypot.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/abs.h \

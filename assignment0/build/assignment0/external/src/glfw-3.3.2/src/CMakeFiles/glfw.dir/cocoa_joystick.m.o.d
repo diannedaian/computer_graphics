@@ -1,8 +1,8 @@
 external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o: \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glfw-3.3.2/src/cocoa_joystick.m \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glfw-3.3.2/src/internal.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/external/src/glfw-3.3.2/src/glfw_config.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glfw-3.3.2/src/../include/GLFW/glfw3.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glfw-3.3.2/src/cocoa_joystick.m \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glfw-3.3.2/src/internal.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/external/src/glfw-3.3.2/src/glfw_config.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glfw-3.3.2/src/../include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/__stddef_header_macro.h \
@@ -33,7 +33,7 @@ external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_uintmax_t.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glfw-3.3.2/src/cocoa_platform.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glfw-3.3.2/src/cocoa_platform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/dlfcn.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdbool.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -1396,12 +1396,12 @@ external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSLightweightMigrationStage.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSManagedObjectModelReference.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreData.framework/Headers/NSCoreDataCoreSpotlightDelegate.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glfw-3.3.2/src/posix_thread.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glfw-3.3.2/src/posix_thread.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/pthread.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/pthread/sched.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/pthread/pthread_impl.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/pthread/qos.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glfw-3.3.2/src/cocoa_joystick.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glfw-3.3.2/src/cocoa_joystick.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Headers/IOCFPlugIn.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPlugInCOM.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h \
@@ -1421,8 +1421,8 @@ external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDUsageTables.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDValue.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDTransaction.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glfw-3.3.2/src/nsgl_context.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glfw-3.3.2/src/nsgl_context.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdatomic.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glfw-3.3.2/src/egl_context.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glfw-3.3.2/src/osmesa_context.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glfw-3.3.2/src/egl_context.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glfw-3.3.2/src/osmesa_context.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Kernel.framework/Headers/IOKit/hidsystem/IOHIDUsageTables.h

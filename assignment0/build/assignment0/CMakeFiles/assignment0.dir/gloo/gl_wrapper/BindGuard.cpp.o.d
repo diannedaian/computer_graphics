@@ -1,7 +1,7 @@
 CMakeFiles/assignment0.dir/gloo/gl_wrapper/BindGuard.cpp.o: \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/BindGuard.cpp \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/BindGuard.hpp \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/gloo/gl_wrapper/IBindable.hpp \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/BindGuard.cpp \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/BindGuard.hpp \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/gloo/gl_wrapper/IBindable.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \

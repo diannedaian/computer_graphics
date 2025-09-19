@@ -1,9 +1,9 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/cmake_install.cmake",
-		"/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/external/src/glfw-3.3.2/cmake_install.cmake",
-		"/Users/dianne/Desktop/MIT/6.4400/assignment0/build/assignment0/external/src/glfw-3.3.2/src/cmake_install.cmake"
+		"/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/cmake_install.cmake",
+		"/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/external/src/glfw-3.3.2/cmake_install.cmake",
+		"/Users/dianne/Desktop/MIT/computer_graphics/assignment0/build/assignment0/external/src/glfw-3.3.2/src/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

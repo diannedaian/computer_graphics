@@ -1,5 +1,5 @@
 CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.o: \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glad/src/glad.c \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glad/src/glad.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_bounds.h \
@@ -92,7 +92,7 @@ CMakeFiles/assignment0.dir/external/src/glad/src/glad.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/secure/_strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/secure/_string.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glad/include/glad/glad.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/glad/include/KHR/khrplatform.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glad/include/glad/glad.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/glad/include/KHR/khrplatform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/dlfcn.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdbool.h

@@ -1,7 +1,7 @@
 CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.o: \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui.cpp \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imconfig.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui.cpp \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imconfig.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -115,7 +115,7 @@ CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_dev_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_mode_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imgui_internal.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imgui_internal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h \
@@ -242,7 +242,7 @@ CMakeFiles/assignment0.dir/external/src/imgui/imgui.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/arm/limits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/arm/_limits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h \
-  /Users/dianne/Desktop/MIT/6.4400/assignment0/external/src/imgui/imstb_textedit.h \
+  /Users/dianne/Desktop/MIT/computer_graphics/assignment0/external/src/imgui/imstb_textedit.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/ctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_ctype.h \
