@@ -24,6 +24,6 @@ In this assignment, I implemented a **spline viewer** with advanced rendering fe
 ---
 
 <p align="center">
-  <img src="teapotcolorful.png" alt="Multi-color teapot" width="400"/>
-  <img src="teacup.png" alt="Teacup model" width="400"/>
+  <img src="./teapotcolorful.png" alt="Multi-color teapot" width="400"/>
+  <img src="./teacup.png" alt="Teacup model" width="400"/>
 </p>
