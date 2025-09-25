@@ -14,7 +14,7 @@ out vec3 world_normal;
 out vec2 tex_coord;
 
 void main() {
-    world_position = vec3(model_matrix * 
+    world_position = vec3(model_matrix *
         vec4(vertex_position, 1.0));
     world_normal = normal_matrix * vertex_normal;
 

@@ -36,7 +36,7 @@ uniform vec3 camera_position;
 
 uniform Material material; // material properties of the object
 uniform AmbientLight ambient_light;
-uniform PointLight point_light; 
+uniform PointLight point_light;
 uniform DirectionalLight directional_light;
 vec3 CalcAmbientLight();
 vec3 CalcPointLight(vec3 normal, vec3 view_dir);
@@ -51,7 +51,7 @@ void main() {
     if (ambient_light.enabled) {
         frag_color += vec4(CalcAmbientLight(), 1.0);
     }
-    
+
     if (point_light.enabled) {
         frag_color += vec4(CalcPointLight(normal, view_dir), 1.0);
     }
@@ -87,12 +87,12 @@ vec3 CalcPointLight(vec3 normal, vec3 view_dir) {
     vec3 reflect_dir = reflect(-light_dir, normal);
     float specular_intensity = pow(
         max(dot(view_dir, reflect_dir), 0.0), material.shininess);
-    vec3 specular_color = specular_intensity * 
+    vec3 specular_color = specular_intensity *
         light.specular * GetSpecularColor();
 
     float distance = length(light.position - world_position);
-    float attenuation = 1.0 / (light.attenuation.x + 
-        light.attenuation.y * distance + 
+    float attenuation = 1.0 / (light.attenuation.x +
+        light.attenuation.y * distance +
         light.attenuation.z * (distance * distance));
 
     return attenuation * (diffuse_color + specular_color);
@@ -107,10 +107,9 @@ vec3 CalcDirectionalLight(vec3 normal, vec3 view_dir) {
     vec3 reflect_dir = reflect(-light_dir, normal);
     float specular_intensity = pow(
         max(dot(view_dir, reflect_dir), 0.0), material.shininess);
-    vec3 specular_color = specular_intensity * 
+    vec3 specular_color = specular_intensity *
         light.specular * GetSpecularColor();
 
     vec3 final_color = diffuse_color + specular_color;
     return final_color;
 }
-

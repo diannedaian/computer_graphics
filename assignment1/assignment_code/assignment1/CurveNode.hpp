@@ -19,19 +19,25 @@ struct CurvePoint {
 
 class CurveNode : public SceneNode {
  public:
-  CurveNode();
+  CurveNode(SplineBasis basis, const std::vector<glm::vec3>& control_points, bool allow_toggle);
   void Update(double delta_time) override;
+
+  std::vector<glm::vec3> control_points_;
+  bool allow_toggle_;
+  SplineBasis spline_basis_;
+  void InitCurve();
 
  private:
   void ToggleSplineBasis();
-  void ConvertGeometry();
+  void ConvertGeometry(bool bezier_to_bspline);
   CurvePoint EvalCurve(float t);
-  void InitCurve();
   void PlotCurve();
   void PlotControlPoints();
   void PlotTangentLine();
 
-  SplineBasis spline_basis_;
+  std::vector<SceneNode*> control_nodes_;
+  std::unique_ptr<SceneNode> curve_node_;
+  std::unique_ptr<SceneNode> tangent_line_node_;
 
   std::shared_ptr<VertexObject> sphere_mesh_;
   std::shared_ptr<VertexObject> curve_polyline_;
@@ -42,6 +48,18 @@ class CurveNode : public SceneNode {
 
 
   const int N_SUBDIV_ = 50;
+
+  glm::mat4 B_bezier = glm::mat4(1,0,0,0,
+    -3,3,0,0,
+    3,-6,3,0,
+    -1,3,-3,1
+  );
+
+  glm::mat4 B_bspline = (1.0f / 6.0f) * glm::mat4(1,4,1,0,
+    -3,0,3,0,
+    3,-6,3,0,
+    -1,3,-3,1
+  );
 };
 }  // namespace GLOO
 

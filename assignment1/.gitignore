@@ -1,0 +1,32 @@
+# Build directories
+build/
+cmake-build-*/
+
+# External libraries (too large for git)
+external/
+
+# IDE files
+.vscode/
+*.vcxproj
+*.vcxproj.filters
+*.sln
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Compiled binaries
+*.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
