@@ -26,6 +26,7 @@ In this assignment, I implemented a **spline viewer** with advanced rendering fe
 
 
 <p align="center">
+  <img src="https://github.com/user-attachments/assets/d5f021bf-a295-4220-a877-0bb8a78593e3" alt="Teapot demo" width="600"/>
  <img width="400" height="250" alt="teapotcolorful" src="https://github.com/user-attachments/assets/4791e3cd-5fdb-4216-a418-27e2d24ae482" />
  <img width="400" height="300" alt="teacup" src="https://github.com/user-attachments/assets/72a7f516-cd84-4635-a212-1dd042a19e02" />
 </p>
