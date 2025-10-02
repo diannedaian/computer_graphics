@@ -1,0 +1,82 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build directories
+build/
+*/build/
+**/build/
+
+# External libraries and dependencies
+external/
+*/external/
+**/external/
+
+# Compiled binaries and executables
+*.exe
+*.out
+*.app
+*.dSYM/
+*.so
+*.dylib
+*.dll
+
+# Object files
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.libs
+*.so
+*.so.*
+*.a
+*.pyc
+*.pyo
+*.pyd
+*.dylib
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Sample solutions (pre-compiled binaries)
+sample_solution/
+*/sample_solution/
+**/sample_solution/
+
+# ImGui config files
+imgui.ini
+*/imgui.ini
+**/imgui.ini
+
+# Assignment specific ignores
+assignment0/ezgif-*.gif
+assignment1/curvespline.gif
+assignment1/*.png
+assignment2/*.png
