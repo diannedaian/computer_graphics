@@ -4,9 +4,11 @@
 #include "gloo/SceneNode.hpp"
 #include "gloo/VertexObject.hpp"
 #include "gloo/shaders/ShaderProgram.hpp"
+#include "gloo/shaders/PhongShader.hpp"
 
 #include <string>
 #include <vector>
+#include <memory>
 
 namespace GLOO {
 class SkeletonNode : public SceneNode {
@@ -33,6 +35,16 @@ class SkeletonNode : public SceneNode {
   DrawMode draw_mode_;
   // Euler angles of the UI sliders.
   std::vector<EulerAngle*> linked_angles_;
+  // Joint nodes for skeleton hierarchy.
+  std::vector<SceneNode*> joint_nodes_;
+
+  // Shared meshes and shader for stick figure rendering
+  std::shared_ptr<VertexObject> sphere_mesh_;
+  std::shared_ptr<VertexObject> cylinder_mesh_;
+  std::shared_ptr<PhongShader> shader_;
+  std::vector<SceneNode*> sphere_nodes_;
+  std::vector<SceneNode*> cylinder_nodes_;
+
 };
 }  // namespace GLOO
 

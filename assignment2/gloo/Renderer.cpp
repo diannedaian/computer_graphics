@@ -35,6 +35,24 @@ void Renderer::Render(const Scene& scene) const {
   RenderScene(scene);
 }
 
+void Renderer::RecursiveRetrieve(const SceneNode& node, RenderingInfo& info, const glm::mat4& model_matrix) const {
+  // 1. Calculate the current node's Local-to-World matrix (model_matrix)
+  const glm::mat4 local_to_parent = node.GetTransform().GetLocalToParentMatrix();
+  const glm::mat4 new_model_matrix = model_matrix * local_to_parent;
+
+  if(node.IsActive()){
+    RenderingComponent* r_comp_ptr = node.GetComponentPtr<RenderingComponent>();
+
+    if (r_comp_ptr != nullptr) {
+      info.emplace_back(r_comp_ptr, new_model_matrix);
+    }
+  }
+  for (size_t i = 0; i < node.GetChildrenCount(); i++) {
+    const SceneNode& child = node.GetChild(i);
+    RecursiveRetrieve(child, info, new_model_matrix);
+  }
+}
+
 Renderer::RenderingInfo Renderer::RetrieveRenderingInfo(
     const Scene& scene) const {
   RenderingInfo info;
@@ -47,12 +65,14 @@ Renderer::RenderingInfo Renderer::RetrieveRenderingInfo(
   // Hint: you shouldn't need root.GetComponentPtrsInChildren. Instead you
   // should create your own recursive function that collects
   // std::pair<RenderingComponent*, glm::mat4>.
-  auto robj_ptrs = root.GetComponentPtrsInChildren<RenderingComponent>();
-  for (auto ptr : robj_ptrs) {
-    auto node_ptr = ptr->GetNodePtr();
-    if (node_ptr->IsActive())
-      info.emplace_back(ptr, node_ptr->GetTransform().GetLocalToWorldMatrix());
-  }
+  // auto robj_ptrs = root.GetComponentPtrsInChildren<RenderingComponent>();
+  // for (auto ptr : robj_ptrs) {
+  //   auto node_ptr = ptr->GetNodePtr();
+  //   if (node_ptr->IsActive())
+  //     info.emplace_back(ptr, node_ptr->GetTransform().GetLocalToWorldMatrix());
+  // }
+  const glm::mat4 identity_matrix(1.0f);
+  RecursiveRetrieve(root, info, identity_matrix);
   return info;
 }
 
