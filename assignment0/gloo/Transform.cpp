@@ -76,15 +76,43 @@ glm::vec3 Transform::GetWorldPosition() const {
 glm::mat4 Transform::GetLocalToParentMatrix() const {
   return local_transform_mat_;
 }
-
 glm::mat4 Transform::GetLocalToAncestorMatrix(SceneNode* ancestor) const {
-  // TODO: optionally implement this method which can become useful in SSD.
-  throw std::logic_error("Unimplemented!");
-}
+  if (ancestor == nullptr) {
+    // If ancestor is nullptr, treat it as the world root (same as GetLocalToWorldMatrix).
+    return GetLocalToWorldMatrix();
+  }
 
+  // Start with the current node's local transformation matrix (Local-to-Parent).
+  glm::mat4 local_to_ancestor_matrix = local_transform_mat_;
+  // Traverse up the parent chain to accumulate the transformation.
+  SceneNode* current_node = node_.GetParentPtr();
+
+  // Accumulate transformations until the ancestor node is reached.
+  while (current_node != nullptr && current_node != ancestor) {
+    local_to_ancestor_matrix = current_node->GetTransform().GetLocalToParentMatrix() * local_to_ancestor_matrix;
+    current_node = current_node->GetParentPtr();
+  }
+
+  // If we stopped because we hit the ancestor, we need to include its matrix.
+  if (current_node == ancestor) {
+    local_to_ancestor_matrix = current_node->GetTransform().GetLocalToParentMatrix() * local_to_ancestor_matrix;
+  }
+
+  return local_to_ancestor_matrix;
+}
 glm::mat4 Transform::GetLocalToWorldMatrix() const {
   // TODO: calculate local-to-world matrix.
-  return local_transform_mat_;
+  glm::mat4 local_to_world_matrix = local_transform_mat_;
+  SceneNode* current_node = node_.GetParentPtr();
+  while (current_node != nullptr) {
+    // Premultiply the current accumulated matrix by the parent's Local-to-Parent matrix.
+    // T_World = T_Parent * T_Local
+    local_to_world_matrix = current_node->GetTransform().GetLocalToParentMatrix() * local_to_world_matrix;
+
+    // Move up the hierarchy.
+    current_node = current_node->GetParentPtr();
+  }
+  return local_to_world_matrix;
 }
 
 void Transform::UpdateLocalTransformMatrix() {
