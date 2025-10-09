@@ -25,42 +25,45 @@ class SkeletonNode : public SceneNode {
   void OnJointChanged();
 
  private:
+  // Character instance - holds all per-character state
+  struct CharacterInstance {
+    std::unique_ptr<SceneNode> root_node;              // Root node for world positioning
+    std::vector<SceneNode*> joint_nodes;               // Joint hierarchy
+    std::vector<SceneNode*> sphere_nodes;              // Sphere rendering nodes
+    std::vector<SceneNode*> cylinder_nodes;            // Cylinder rendering nodes
+    SceneNode* ssd_node;                               // SSD mesh node
+    std::shared_ptr<VertexObject> deformed_mesh;       // Deformed mesh
+    std::vector<glm::mat4> bind_pose_matrices;         // Bi matrices
+    std::vector<EulerAngle> current_pose;              // Current pose state
+  };
+
   void LoadAllFiles(const std::string& prefix);
-  void LoadSkeletonFile(const std::string& path);
+  void LoadSkeletonFile(const std::string& path, CharacterInstance& character);
   void LoadMeshFile(const std::string& filename);
   void LoadAttachmentWeights(const std::string& path);
-  void ComputeBindPoseMatrices();
-  void DeformMesh();
+  void ComputeBindPoseMatrices(CharacterInstance& character);
+  void DeformMesh(CharacterInstance& character);
   void ComputeNormals(const std::vector<glm::vec3>& vertices, std::vector<glm::vec3>& normals);
 
   void ToggleDrawMode();
-  void DecorateTree();
+  void DecorateTree(CharacterInstance& character);
+  void InitializeCharacter(const std::string& prefix, const glm::vec3& world_pos);
+  void UpdateActiveCharacterPose(int new_idx);
 
+  int active_char_idx_;
   DrawMode draw_mode_;
   // Euler angles of the UI sliders.
   std::vector<EulerAngle*> linked_angles_;
-  // Joint nodes for skeleton hierarchy.
-  std::vector<SceneNode*> joint_nodes_;
 
-  // Shared meshes and shader for stick figure rendering
+  // Multiple character instances
+  std::vector<CharacterInstance> characters_;
+
+  // Shared resources across all characters
   std::shared_ptr<VertexObject> sphere_mesh_;
   std::shared_ptr<VertexObject> cylinder_mesh_;
   std::shared_ptr<PhongShader> shader_;
-  std::vector<SceneNode*> sphere_nodes_;
-  std::vector<SceneNode*> cylinder_nodes_;
-
-  // Bind pose mesh for SSD mode
   std::shared_ptr<VertexObject> bind_pose_mesh_;
-
-  // Attachment weights matrix (n vertices × m-1 joints, excluding root joint)
-  // attachment_weights_[i][j] = weight of joint (j+1) for vertex i
-  // Root joint (joint 0) has implicit zero weights
   std::vector<std::vector<float>> attachment_weights_;
-
-  // SSD deformation data
-  std::vector<glm::mat4> bind_pose_matrices_;           // Bi matrices for each joint
-  std::shared_ptr<VertexObject> deformed_mesh_;         // Deformed mesh for SSD mode
-  SceneNode* ssd_node_;                                  // Node for SSD rendering
 
 };
 }  // namespace GLOO

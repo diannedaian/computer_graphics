@@ -13,10 +13,13 @@
 
 namespace GLOO {
 SkeletonNode::SkeletonNode(const std::string& filename)
-    : SceneNode(), draw_mode_(DrawMode::Skeleton) {
+    : SceneNode(), active_char_idx_(0), draw_mode_(DrawMode::Skeleton) {
+  // Load shared resources
   LoadAllFiles(filename);
-  ComputeBindPoseMatrices();
-  DecorateTree();
+
+  // Initialize two characters at different positions
+  InitializeCharacter(filename, glm::vec3(-1.0f, 0.0f, 0.0f));  // Character 1
+  InitializeCharacter(filename, glm::vec3(1.0f, 0.0f, 0.0f));   // Character 2
 
   // Force initial update.
   OnJointChanged();
@@ -26,29 +29,32 @@ void SkeletonNode::ToggleDrawMode() {
   draw_mode_ =
       draw_mode_ == DrawMode::Skeleton ? DrawMode::SSD : DrawMode::Skeleton;
 
-  if (draw_mode_ == DrawMode::Skeleton) {
-    // Show skeleton mode: activate sphere and cylinder nodes
-    for (auto* sphere_node : sphere_nodes_) {
-      sphere_node->SetActive(true);
-    }
-    for (auto* cylinder_node : cylinder_nodes_) {
-      cylinder_node->SetActive(true);
-    }
-    // Hide SSD mesh
-    if (ssd_node_) {
-      ssd_node_->SetActive(false);
-    }
-  } else {
-    // Show SSD mode: hide skeleton, show deformed mesh
-    for (auto* sphere_node : sphere_nodes_) {
-      sphere_node->SetActive(false);
-    }
-    for (auto* cylinder_node : cylinder_nodes_) {
-      cylinder_node->SetActive(false);
-    }
-    // Show SSD mesh
-    if (ssd_node_) {
-      ssd_node_->SetActive(true);
+  // Apply mode change to ALL characters
+  for (auto& character : characters_) {
+    if (draw_mode_ == DrawMode::Skeleton) {
+      // Show skeleton mode: activate sphere and cylinder nodes
+      for (auto* sphere_node : character.sphere_nodes) {
+        sphere_node->SetActive(true);
+      }
+      for (auto* cylinder_node : character.cylinder_nodes) {
+        cylinder_node->SetActive(true);
+      }
+      // Hide SSD mesh
+      if (character.ssd_node) {
+        character.ssd_node->SetActive(false);
+      }
+    } else {
+      // Show SSD mode: hide skeleton, show deformed mesh
+      for (auto* sphere_node : character.sphere_nodes) {
+        sphere_node->SetActive(false);
+      }
+      for (auto* cylinder_node : character.cylinder_nodes) {
+        cylinder_node->SetActive(false);
+      }
+      // Show SSD mesh
+      if (character.ssd_node) {
+        character.ssd_node->SetActive(true);
+      }
     }
   }
 }
@@ -100,34 +106,22 @@ void SkeletonNode::ToggleDrawMode() {
 
 
 // }
-void SkeletonNode::DecorateTree() {
-  // --- A. Setup Shared Resources ---
-  shader_ = std::make_shared<PhongShader>();
-
-  float joint_radius = 0.03f;
-  sphere_mesh_ = PrimitiveFactory::CreateSphere(joint_radius, 15, 15);
-
-  float bone_radius = 0.015f;
-  // Base cylinder has radius 0.015 and height 1.0, positioned along +Y axis, bottom at (0,0,0).
-  cylinder_mesh_ = PrimitiveFactory::CreateCylinder(bone_radius, 1.0f, 10);
-
-  // --- B. Decorate Joints with Spheres and Bones ---
-
+void SkeletonNode::DecorateTree(CharacterInstance& character) {
   // Iterate through all joints.
-  for (size_t i = 0; i < joint_nodes_.size(); ++i) {
-    SceneNode* joint_ptr = joint_nodes_[i];
+  for (size_t i = 0; i < character.joint_nodes.size(); ++i) {
+    SceneNode* joint_ptr = character.joint_nodes[i];
 
     // 1. Add Sphere for the Joint (Always centered at the joint's origin)
     auto sphere_node = make_unique<SceneNode>();
     sphere_node->CreateComponent<ShadingComponent>(shader_);
     sphere_node->CreateComponent<RenderingComponent>(sphere_mesh_);
-    sphere_nodes_.push_back(sphere_node.get());
+    character.sphere_nodes.push_back(sphere_node.get());
     joint_ptr->AddChild(std::move(sphere_node));
 
     // 2. Add Cylinder (Bone) between this joint (Child) and its Parent
-    // Only create cylinders between actual joint nodes, not between joint and SkeletonNode
-    // Skip root joint (i = 0) and any joint whose parent is this SkeletonNode
-    if (i > 0 && joint_ptr->GetParentPtr() != this) {
+    // Only create cylinders between actual joint nodes, not between joint and character root
+    // Skip root joint (i = 0) and any joint whose parent is character root
+    if (i > 0 && joint_ptr->GetParentPtr() != character.root_node.get()) {
       SceneNode* parent_ptr = joint_ptr->GetParentPtr();
 
       // Create the bone node and attach it as a child of the PARENT JOINT.
@@ -138,7 +132,7 @@ void SkeletonNode::DecorateTree() {
 
       parent_ptr->AddChild(std::move(bone_node));
 
-      cylinder_nodes_.push_back(bone_node_ptr);
+      character.cylinder_nodes.push_back(bone_node_ptr);
 
       // --- Bone Transformation Logic (Relative to Parent) ---
 
@@ -160,46 +154,62 @@ void SkeletonNode::DecorateTree() {
 
       Transform& bone_transform = bone_node_ptr->GetTransform();
 
-      // 1. No Translation: The bone is already starting at (0, 0, 0), which is the parent's position.
-      // bone_transform.SetPosition(glm::vec3(0.f)); // Implicitly zero/identity
-
       // 2. Rotation: Align the bone with the child joint.
       if (angle > 1e-6) {
           bone_transform.SetRotation(glm::normalize(rotation_axis), angle);
       }
 
       // 3. Scaling: Stretch the bone along Y to match the length.
-      // The local bone height is 1.0, scaling by 'length' gives the correct bone length.
       bone_transform.SetScale(glm::vec3(1.f, length, 1.f));
-
-      // Note: No translation is needed because the cylinder's bottom (0,0,0) is
-      // where the parent joint is, and the cylinder's top (0, length, 0) is
-      // where the child joint is (after rotation and scaling).
     }
   }
 
   // --- C. Setup SSD Node ---
   // Create a node for the deformed mesh (initially inactive)
   auto ssd_node = make_unique<SceneNode>();
-  ssd_node_ = ssd_node.get();
-  ssd_node_->CreateComponent<ShadingComponent>(shader_);
+  character.ssd_node = ssd_node.get();
+  character.ssd_node->CreateComponent<ShadingComponent>(shader_);
   // The RenderingComponent will be set up when the deformed mesh is created
-  AddChild(std::move(ssd_node));
+  character.root_node->AddChild(std::move(ssd_node));
 
   // Initially hide SSD mode (show skeleton by default)
-  ssd_node_->SetActive(false);
+  character.ssd_node->SetActive(false);
 }
 
 void SkeletonNode::Update(double delta_time) {
-  // Prevent multiple toggle.
-  static bool prev_released = true;
+  // Prevent multiple toggles with static flags
+  static bool s_prev_released = true;
+  static bool one_prev_released = true;
+  static bool two_prev_released = true;
+
+  // Toggle draw mode with 'S' key
   if (InputManager::GetInstance().IsKeyPressed('S')) {
-    if (prev_released) {
+    if (s_prev_released) {
       ToggleDrawMode();
     }
-    prev_released = false;
+    s_prev_released = false;
   } else if (InputManager::GetInstance().IsKeyReleased('S')) {
-    prev_released = true;
+    s_prev_released = true;
+  }
+
+  // Switch to character 1 with '1' key
+  if (InputManager::GetInstance().IsKeyPressed('1')) {
+    if (one_prev_released && active_char_idx_ != 0) {
+      UpdateActiveCharacterPose(0);
+    }
+    one_prev_released = false;
+  } else if (InputManager::GetInstance().IsKeyReleased('1')) {
+    one_prev_released = true;
+  }
+
+  // Switch to character 2 with '2' key
+  if (InputManager::GetInstance().IsKeyPressed('2')) {
+    if (two_prev_released && active_char_idx_ != 1) {
+      UpdateActiveCharacterPose(1);
+    }
+    two_prev_released = false;
+  } else if (InputManager::GetInstance().IsKeyReleased('2')) {
+    two_prev_released = true;
   }
 }
 
@@ -266,15 +276,22 @@ void SkeletonNode::Update(double delta_time) {
 
 
   void SkeletonNode::OnJointChanged() {
+    // Get the active character
+    if (active_char_idx_ < 0 || active_char_idx_ >= static_cast<int>(characters_.size())) {
+      return;
+    }
+
+    CharacterInstance& character = characters_[active_char_idx_];
+
     // Update joint rotations based on linked UI sliders.
-    if (linked_angles_.size() != joint_nodes_.size()) {
+    if (linked_angles_.size() != character.joint_nodes.size()) {
         return;
     }
 
     // Apply new Euler angle rotations to joints.
     for (size_t i = 0; i < linked_angles_.size(); ++i) {
       const EulerAngle& angle = *linked_angles_[i];
-      SceneNode* joint_ptr = joint_nodes_[i];
+      SceneNode* joint_ptr = character.joint_nodes[i];
 
       // Use angles directly
       glm::vec3 euler_rads(angle.rx, angle.ry, angle.rz);
@@ -285,18 +302,18 @@ void SkeletonNode::Update(double delta_time) {
     }
 
     // Recompute the scale and rotation of the bone cylinders to span the new joint positions.
-    for (size_t i = 0; i < cylinder_nodes_.size(); i++) {
+    for (size_t i = 0; i < character.cylinder_nodes.size(); i++) {
       size_t child_joint_idx = i + 1;
-      SceneNode* child_joint = joint_nodes_[child_joint_idx];
+      SceneNode* child_joint = character.joint_nodes[child_joint_idx];
       SceneNode* parent_joint = child_joint->GetParentPtr();
 
-      if (parent_joint == this) continue;
+      if (parent_joint == character.root_node.get()) continue;
 
       // Use the child joint's local position relative to the parent to define the bone.
       glm::vec3 bone_dir_local = child_joint->GetTransform().GetPosition();
       float bone_length = glm::length(bone_dir_local);
 
-      SceneNode* cylinder_node = cylinder_nodes_[i];
+      SceneNode* cylinder_node = character.cylinder_nodes[i];
 
       if (bone_length < 1e-6) {
         cylinder_node->SetActive(false);
@@ -331,15 +348,14 @@ void SkeletonNode::Update(double delta_time) {
     }
 
     // Deform mesh for SSD mode
-    DeformMesh();
+    DeformMesh(character);
 }
 
 void SkeletonNode::LinkRotationControl(const std::vector<EulerAngle*>& angles) {
   linked_angles_ = angles;
 }
 
-void SkeletonNode::LoadSkeletonFile(const std::string& path) {
-  // TODO: load skeleton file and build the tree of joints.
+void SkeletonNode::LoadSkeletonFile(const std::string& path, CharacterInstance& character) {
   std::ifstream file(path);
   std::string line;
   std::vector<SceneNode*> joint_ptrs;  // Store raw pointers for hierarchy building
@@ -358,12 +374,12 @@ void SkeletonNode::LoadSkeletonFile(const std::string& path) {
     // Store pointer for hierarchy building
     SceneNode* joint_ptr = joint_node.get();
     joint_ptrs.push_back(joint_ptr);
-    joint_nodes_.push_back(joint_ptr);
+    character.joint_nodes.push_back(joint_ptr);
 
     // Add to hierarchy
     if (parent_index == -1) {
-      // Root joint - add as child of this SkeletonNode
-      AddChild(std::move(joint_node));
+      // Root joint - add as child of character's root node
+      character.root_node->AddChild(std::move(joint_node));
     } else {
       // Child joint - add to its parent
       joint_ptrs[parent_index]->AddChild(std::move(joint_node));
@@ -378,17 +394,17 @@ void SkeletonNode::LoadMeshFile(const std::string& filename) {
   // Store the bind pose mesh for SSD mode
   bind_pose_mesh_ = vtx_obj;
 }
-void SkeletonNode::ComputeBindPoseMatrices() {
+void SkeletonNode::ComputeBindPoseMatrices(CharacterInstance& character) {
   // Compute bind pose transformation matrices Bi for each joint
   // Bi = joint's world transformation matrix in bind pose (LocalToWorld)
-  bind_pose_matrices_.clear();
-  bind_pose_matrices_.resize(joint_nodes_.size());
+  character.bind_pose_matrices.clear();
+  character.bind_pose_matrices.resize(character.joint_nodes.size());
 
-  for (size_t i = 0; i < joint_nodes_.size(); ++i) {
-    SceneNode* joint = joint_nodes_[i];
+  for (size_t i = 0; i < character.joint_nodes.size(); ++i) {
+    SceneNode* joint = character.joint_nodes[i];
 
     // Use the correctly implemented GetLocalToWorldMatrix()
-    bind_pose_matrices_[i] = joint->GetTransform().GetLocalToWorldMatrix();
+    character.bind_pose_matrices[i] = joint->GetTransform().GetLocalToWorldMatrix();
   }
 }
 // Inside GLOO::SkeletonNode
@@ -449,7 +465,7 @@ void SkeletonNode::ComputeNormals(const std::vector<glm::vec3>& vertices, std::v
 }
 
 
-void SkeletonNode::DeformMesh() {
+void SkeletonNode::DeformMesh(CharacterInstance& character) {
   if (!bind_pose_mesh_ || attachment_weights_.empty()) {
     return;
   }
@@ -465,7 +481,7 @@ void SkeletonNode::DeformMesh() {
     float total_weight = 0.0f;
 
     // 1. Accumulate transformations for joints 1 to m-1 (non-root joints)
-    for (size_t joint_idx = 1; joint_idx < joint_nodes_.size(); ++joint_idx) {
+    for (size_t joint_idx = 1; joint_idx < character.joint_nodes.size(); ++joint_idx) {
       // Attachment weights for vertex i are for joints 1, 2, ...
       float weight = 0.0f;
       if (vertex_idx < attachment_weights_.size() && joint_idx - 1 < attachment_weights_[vertex_idx].size()) {
@@ -474,10 +490,10 @@ void SkeletonNode::DeformMesh() {
 
       if (weight > 0.0f) {
         // T: Current world transformation of this joint
-        glm::mat4 T = joint_nodes_[joint_idx]->GetTransform().GetLocalToWorldMatrix();
+        glm::mat4 T = character.joint_nodes[joint_idx]->GetTransform().GetLocalToWorldMatrix();
 
         // Bi_inv: Inverse bind pose transformation
-        glm::mat4 Bi_inv = glm::inverse(bind_pose_matrices_[joint_idx]);
+        glm::mat4 Bi_inv = glm::inverse(character.bind_pose_matrices[joint_idx]);
 
         // Ti = T * Bi^(-1) : The deformation transformation
         glm::mat4 Ti = T * Bi_inv;
@@ -492,10 +508,10 @@ void SkeletonNode::DeformMesh() {
     float root_weight = 1.0f - total_weight;
     if (root_weight > 0.0f) {
       // T: Current world transformation of the root joint
-      glm::mat4 T_root = joint_nodes_[0]->GetTransform().GetLocalToWorldMatrix();
+      glm::mat4 T_root = character.joint_nodes[0]->GetTransform().GetLocalToWorldMatrix();
 
       // Bi_inv: Inverse bind pose transformation of the root
-      glm::mat4 Bi_inv_root = glm::inverse(bind_pose_matrices_[0]);
+      glm::mat4 Bi_inv_root = glm::inverse(character.bind_pose_matrices[0]);
 
       // Ti = T * Bi^(-1) : The deformation transformation for the root
       glm::mat4 Ti_root = T_root * Bi_inv_root;
@@ -512,21 +528,21 @@ void SkeletonNode::DeformMesh() {
   ComputeNormals(deformed_vertices, deformed_normals);
 
   // Update or create the deformed mesh object
-  if (!deformed_mesh_) {
-    deformed_mesh_ = std::make_shared<VertexObject>();
+  if (!character.deformed_mesh) {
+    character.deformed_mesh = std::make_shared<VertexObject>();
     // Copy indices once
     if (bind_pose_mesh_->GetIndices().size() > 0) {
-      deformed_mesh_->UpdateIndices(make_unique<GLOO::IndexArray>(bind_pose_mesh_->GetIndices()));
+      character.deformed_mesh->UpdateIndices(GLOO::make_unique<IndexArray>(bind_pose_mesh_->GetIndices()));
     }
   }
 
   // Update positions and normals
-  deformed_mesh_->UpdatePositions(make_unique<GLOO::PositionArray>(deformed_vertices));
-  deformed_mesh_->UpdateNormals(make_unique<GLOO::NormalArray>(deformed_normals));
+  character.deformed_mesh->UpdatePositions(GLOO::make_unique<PositionArray>(deformed_vertices));
+  character.deformed_mesh->UpdateNormals(GLOO::make_unique<NormalArray>(deformed_normals));
 
   // Set up the RenderingComponent for the SSD node if it hasn't been added yet
-  if (ssd_node_ && !ssd_node_->GetComponentPtr<RenderingComponent>()) {
-    ssd_node_->CreateComponent<RenderingComponent>(deformed_mesh_);
+  if (character.ssd_node && !character.ssd_node->GetComponentPtr<RenderingComponent>()) {
+    character.ssd_node->CreateComponent<RenderingComponent>(character.deformed_mesh);
   }
 }
 
@@ -556,10 +572,77 @@ void SkeletonNode::LoadAttachmentWeights(const std::string& path) {
   file.close();
 }
 
+void SkeletonNode::InitializeCharacter(const std::string& prefix, const glm::vec3& world_pos) {
+  // Create new character instance
+  CharacterInstance character;
+
+  // Create root node for world positioning
+  auto root = make_unique<SceneNode>();
+  root->GetTransform().SetPosition(world_pos);
+
+  // Store raw pointer before moving
+  SceneNode* root_ptr = root.get();
+  AddChild(std::move(root));
+  character.root_node.reset(root_ptr);
+
+  // Load skeleton hierarchy
+  std::string prefix_full = GetAssetDir() + prefix;
+  LoadSkeletonFile(prefix_full + ".skel", character);
+
+  // Compute bind pose matrices
+  ComputeBindPoseMatrices(character);
+
+  // Decorate tree with rendering nodes
+  DecorateTree(character);
+
+  // Initialize current pose with default values
+  character.current_pose.resize(character.joint_nodes.size());
+  for (auto& angle : character.current_pose) {
+    angle.rx = angle.ry = angle.rz = 0.0f;
+  }
+
+  // Add to characters list
+  characters_.push_back(std::move(character));
+}
+
 void SkeletonNode::LoadAllFiles(const std::string& prefix) {
   std::string prefix_full = GetAssetDir() + prefix;
-  LoadSkeletonFile(prefix_full + ".skel");
+
+  // Load shared resources only
   LoadMeshFile(prefix + ".obj");
   LoadAttachmentWeights(prefix_full + ".attach");
+
+  // Setup shared rendering resources
+  shader_ = std::make_shared<PhongShader>();
+  float joint_radius = 0.03f;
+  sphere_mesh_ = PrimitiveFactory::CreateSphere(joint_radius, 15, 15);
+  float bone_radius = 0.015f;
+  cylinder_mesh_ = PrimitiveFactory::CreateCylinder(bone_radius, 1.0f, 10);
+}
+
+void SkeletonNode::UpdateActiveCharacterPose(int new_idx) {
+  if (new_idx < 0 || new_idx >= static_cast<int>(characters_.size())) {
+    return;
+  }
+
+  // Save current UI values to the old character's pose
+  if (active_char_idx_ >= 0 && active_char_idx_ < static_cast<int>(characters_.size())) {
+    CharacterInstance& old_char = characters_[active_char_idx_];
+    for (size_t i = 0; i < linked_angles_.size() && i < old_char.current_pose.size(); ++i) {
+      old_char.current_pose[i] = *linked_angles_[i];
+    }
+  }
+
+  // Switch active character
+  active_char_idx_ = new_idx;
+
+  // Load new character's pose into UI
+  CharacterInstance& new_char = characters_[active_char_idx_];
+  for (size_t i = 0; i < linked_angles_.size() && i < new_char.current_pose.size(); ++i) {
+    *linked_angles_[i] = new_char.current_pose[i];
+  }
+
+  // Force scene update
+  OnJointChanged();
 }
 }  // namespace GLOO
