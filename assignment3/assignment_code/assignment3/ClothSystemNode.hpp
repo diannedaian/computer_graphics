@@ -116,6 +116,9 @@ class ClothSystemNode : public SceneNode {
     // ---- 4. Build visual wireframe for cloth ----
     CreateClothWireframe();
 
+    // ---- 5. Create wind visualization ----
+    CreateWindVisualization();
+
     std::cerr << "ClothSystemNode initialized with "
               << m_cloth_size * m_cloth_size << " particles and "
               << m_system.springs.size() << " springs." << std::endl;
@@ -165,6 +168,43 @@ class ClothSystemNode : public SceneNode {
     AddChild(std::move(m_wireframe_node));
   }
 
+  // Create wind visualization (arrow showing wind direction)
+  void CreateWindVisualization() {
+    auto line_shader = std::make_shared<SimpleShader>();
+
+    // Create wind arrow (simple line with arrowhead)
+    std::vector<glm::vec3> wind_arrow_positions;
+
+    // Arrow shaft
+    wind_arrow_positions.push_back(glm::vec3(0.0f, 0.0f, 0.0f));
+    wind_arrow_positions.push_back(glm::vec3(0.5f, 0.0f, 0.0f));
+
+    // Arrow head
+    wind_arrow_positions.push_back(glm::vec3(0.5f, 0.0f, 0.0f));
+    wind_arrow_positions.push_back(glm::vec3(0.4f, 0.1f, 0.0f));
+
+    wind_arrow_positions.push_back(glm::vec3(0.5f, 0.0f, 0.0f));
+    wind_arrow_positions.push_back(glm::vec3(0.4f, -0.1f, 0.0f));
+
+    // Create wind arrow object
+    auto wind_arrow = make_unique<VertexObject>();
+    auto positions = make_unique<PositionArray>(wind_arrow_positions);
+    wind_arrow->UpdatePositions(std::move(positions));
+
+    // Store reference for updates
+    m_wind_arrow_object = wind_arrow.get();
+
+    // Create wind visualization node
+    m_wind_visualization_node = make_unique<SceneNode>();
+    m_wind_visualization_node->CreateComponent<ShadingComponent>(line_shader);
+    auto& rendering_comp = m_wind_visualization_node->CreateComponent<RenderingComponent>(std::shared_ptr<VertexObject>(wind_arrow.release()));
+    rendering_comp.SetDrawMode(DrawMode::Lines);
+
+    // Position wind arrow above the cloth
+    m_wind_visualization_node->GetTransform().SetPosition(glm::vec3(0.0f, 1.0f, 0.0f));
+    AddChild(std::move(m_wind_visualization_node));
+  }
+
   // Update wireframe with current particle positions
   void UpdateWireframe() {
     if (!m_wireframe_vertex_object) return;
@@ -193,10 +233,56 @@ class ClothSystemNode : public SceneNode {
     m_wireframe_vertex_object->UpdatePositions(std::move(positions));
   }
 
+  // Update wind visualization arrow
+  void UpdateWindVisualization() {
+    if (!m_wind_arrow_object || !m_wind_visualization_node) return;
+
+    // Only show wind arrow when wind is enabled
+    m_wind_visualization_node->GetTransform().SetPosition(
+      m_system.IsWindEnabled() ? glm::vec3(0.0f, 1.0f, 0.0f) : glm::vec3(0.0f, -10.0f, 0.0f)
+    );
+
+    if (!m_system.IsWindEnabled()) return;
+
+    // Update arrow direction based on wind direction
+    glm::vec3 wind_dir = m_system.wind_direction;
+    float wind_strength = m_system.wind_strength;
+
+    // Create arrow pointing in wind direction
+    std::vector<glm::vec3> wind_arrow_positions;
+
+    // Arrow shaft
+    wind_arrow_positions.push_back(glm::vec3(0.0f, 0.0f, 0.0f));
+    wind_arrow_positions.push_back(wind_dir * 0.5f * wind_strength);
+
+    // Arrow head
+    glm::vec3 arrow_tip = wind_dir * 0.5f * wind_strength;
+    glm::vec3 perp = glm::normalize(glm::cross(wind_dir, glm::vec3(0.0f, 1.0f, 0.0f))) * 0.1f;
+
+    wind_arrow_positions.push_back(arrow_tip);
+    wind_arrow_positions.push_back(arrow_tip - wind_dir * 0.1f + perp);
+
+    wind_arrow_positions.push_back(arrow_tip);
+    wind_arrow_positions.push_back(arrow_tip - wind_dir * 0.1f - perp);
+
+    // Update the wind arrow
+    auto positions = make_unique<PositionArray>(wind_arrow_positions);
+    m_wind_arrow_object->UpdatePositions(std::move(positions));
+  }
+
   // Per-frame update
   void Update(double delta_time) override {
     if (InputManager::GetInstance().IsKeyPressed('R'))
       Reset();
+
+    // Toggle wind with 'W' key
+    if (InputManager::GetInstance().IsKeyPressed('W')) {
+      m_system.ToggleWind();
+      std::cerr << "Wind " << (m_system.IsWindEnabled() ? "enabled" : "disabled") << std::endl;
+    }
+
+    // Update wind
+    m_system.UpdateWind(m_dt);
 
     // Accumulate time so simulation is frame-rate independent
     m_accumulator += delta_time;
@@ -213,6 +299,9 @@ class ClothSystemNode : public SceneNode {
 
     // Update wireframe (we'll recreate it each frame for simplicity)
     UpdateWireframe();
+
+    // Update wind visualization
+    UpdateWindVisualization();
   }
 
   // Reset key
@@ -239,6 +328,10 @@ class ClothSystemNode : public SceneNode {
   std::unique_ptr<SceneNode> m_wireframe_node;
   VertexObject* m_wireframe_vertex_object;
   std::vector<glm::vec3> m_wireframe_positions;
+
+  // Wind visualization
+  std::unique_ptr<SceneNode> m_wind_visualization_node;
+  VertexObject* m_wind_arrow_object;
 };
 
 }  // namespace GLOO
