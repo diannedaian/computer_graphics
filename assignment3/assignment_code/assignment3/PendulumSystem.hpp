@@ -14,7 +14,7 @@ struct Spring {
 
 class PendulumSystem : public ParticleSystemBase {
 public:
-  float drag_k = 0.5f;  // Increased drag for better stability
+  float drag_k = 1.0f;  // Increased drag for better stability with cloth
   glm::vec3 gravity = glm::vec3(0.0f, -9.8f, 0.0f);
 
   // Data storage

@@ -14,6 +14,8 @@
 #include "gloo/cameras/ArcBallCameraNode.hpp"
 #include "gloo/debug/AxisNode.hpp"
 #include "PendulumSystemNode.hpp"
+#include "ClothSystemNode.hpp"
+#include "SimpleSystemNode.hpp"
 
 
 namespace GLOO {
@@ -34,7 +36,9 @@ void SimulationApp::SetupScene() {
   root.AddChild(std::move(camera_node));
 
   root.AddChild(make_unique<AxisNode>('A'));
+  root.AddChild(make_unique<SimpleSystemNode>(integrator_type_, integration_step_));
   root.AddChild(make_unique<PendulumSystemNode>(integrator_type_, integration_step_, 4));
+  root.AddChild(make_unique<ClothSystemNode>(integrator_type_, integration_step_, 8, 0.2f));
 
   auto ambient_light = std::make_shared<AmbientLight>();
   ambient_light->SetAmbientColor(glm::vec3(0.2f));
