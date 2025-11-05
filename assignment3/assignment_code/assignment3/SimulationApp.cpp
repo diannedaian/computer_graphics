@@ -36,9 +36,19 @@ void SimulationApp::SetupScene() {
   root.AddChild(std::move(camera_node));
 
   root.AddChild(make_unique<AxisNode>('A'));
-  // root.AddChild(make_unique<SimpleSystemNode>(integrator_type_, integration_step_));
-  //  root.AddChild(make_unique<PendulumSystemNode>(integrator_type_, integration_step_, 4));
-   root.AddChild(make_unique<ClothSystemNode>(integrator_type_, integration_step_, 8, 0.2f));
+
+  // Position the three systems at different locations
+  auto simple_system = make_unique<SimpleSystemNode>(integrator_type_, integration_step_);
+  simple_system->GetTransform().SetPosition(glm::vec3(-2.0f, 0.0f, 0.0f));
+  root.AddChild(std::move(simple_system));
+
+  auto pendulum_system = make_unique<PendulumSystemNode>(integrator_type_, integration_step_, 4);
+  pendulum_system->GetTransform().SetPosition(glm::vec3(0.0f, 2.0f, 0.0f));
+  root.AddChild(std::move(pendulum_system));
+
+  auto cloth_system = make_unique<ClothSystemNode>(integrator_type_, integration_step_, 8, 0.2f);
+  cloth_system->GetTransform().SetPosition(glm::vec3(2.0f, 0.0f, 0.0f));
+  root.AddChild(std::move(cloth_system));
 
   auto ambient_light = std::make_shared<AmbientLight>();
   ambient_light->SetAmbientColor(glm::vec3(0.2f));
