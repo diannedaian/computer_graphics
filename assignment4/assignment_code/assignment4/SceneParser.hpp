@@ -56,6 +56,7 @@ class SceneParser {
 
   std::fstream fs_;
   std::string base_path_;
+  std::string scene_filename_;  // Store the scene filename to detect scene02_cube.txt
 };
 }  // namespace GLOO
 

@@ -20,9 +20,15 @@ class ArgParser {
   size_t bounces;
   bool shadows;
 
-  // Supersampling.
+  // Supersampling/anti-aliasing.
   bool jitter;
   bool filter;
+  int samples_per_dim;  // Samples per dimension (samples_per_dim^2 total samples per pixel)
+  std::string aa_filter;  // Anti-aliasing filter type: "box" or "tent"
+
+  // Camera options.
+  std::string camera_type;  // Camera type: "perspective" (default) or "spiral"
+  float twist;  // Twist strength for spiral camera (in radians)
 
  private:
   void SetDefaultValues();

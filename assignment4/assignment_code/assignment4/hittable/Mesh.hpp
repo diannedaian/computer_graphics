@@ -16,6 +16,10 @@ class Mesh : public HittableBase {
   Mesh(std::unique_ptr<PositionArray> positions,
        std::unique_ptr<NormalArray> normals,
        std::unique_ptr<IndexArray> indices);
+  Mesh(std::unique_ptr<PositionArray> positions,
+       std::unique_ptr<NormalArray> normals,
+       std::unique_ptr<IndexArray> indices,
+       std::unique_ptr<TexCoordArray> tex_coords);
 
   bool Intersect(const Ray& ray, float t_min, HitRecord& record) const override;
   const std::vector<Triangle>& GetTriangles() const {

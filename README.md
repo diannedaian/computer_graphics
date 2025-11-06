@@ -59,3 +59,57 @@ In this assignment, I implemented a **physically-based simulation system** with 
 <p align="center">
   <img src="./assignment3.gif" alt="Assignment 3 demo" width="600"/>
 </p>
+
+# Assignment 4
+
+In this assignment, I implemented a **ray tracer** with Phong shading, recursive reflections, and several advanced rendering features:
+
+## Core Features
+- **Phong Lighting Model**: Ambient, diffuse, and specular shading with point and directional lights
+- **Primitive Intersection**: Sphere, Plane, and Triangle primitives with barycentric coordinate interpolation
+- **Transform Nodes**: Support for translated, rotated, and scaled objects via scene graph
+- **Recursive Reflections**: Specular reflections with configurable bounce depth
+- **Shadow Rays**: Visibility testing between surface points and light sources
+
+## Extra Features
+
+### 1. Super Sampling Anti-Aliasing
+Implements pixel-level supersampling with configurable samples per dimension and filter types (Box and Tent filters) to reduce aliasing artifacts.
+
+### 2. Glossy Reflection
+Monte Carlo integration for glossy reflections using roughness parameter and per-pixel seeded random sampling for smooth, realistic material appearance.
+
+### 3. Normal Mapping
+Tangent-space normal mapping for surface detail using TBN matrix transformation, interpolating texture coordinates via barycentric coordinates.
+
+### 4. Spiral Camera Effect
+Artistic camera that rotates rays around the optical axis based on horizontal position, creating a vortex effect.
+
+---
+
+<p align="center">
+  <img src="./assignment4/01_spiral.png" alt="Spiral Camera" width="300"/>
+  <img src="./assignment4/02_bump.png" alt="Normal Mapping" width="300"/>
+  <img src="./assignment4/03_supersampling.png" alt="Sphere with Supersampling" width="300"/>
+</p>
+
+<p align="center">
+  <img src="./assignment4/04_supersampling.png" alt="Axes with Supersampling" width="300"/>
+  <img src="./assignment4/05_supersampling.png" alt="Bunny with Supersampling" width="300"/>
+  <img src="./assignment4/06_glossy.png" alt="Glossy Reflection" width="300"/>
+</p>
+
+<p align="center">
+  <img src="./assignment4/06_supersampling.png" alt="Bunny with Supersampling AA" width="300"/>
+  <img src="./assignment4/07_supersampling.png" alt="Arch with Supersampling" width="300"/>
+</p>
+
+**Image Descriptions:**
+- **01_spiral.png**: Demonstrates the **Spiral Camera Effect** - rays are twisted around the optical axis creating a vortex visual effect
+- **02_bump.png**: Shows **Normal Mapping** applied to the cube, adding surface detail without geometric complexity
+- **03_supersampling.png**: Sphere rendered with **Supersampling Anti-Aliasing** for smoother edges
+- **04_supersampling.png**: Axes scene with **Supersampling AA** reducing aliasing artifacts
+- **05_supersampling.png**: Low-poly bunny with **Supersampling AA** for improved edge quality
+- **06_glossy.png**: Demonstrates **Glossy Reflection** on the mirror bunny material with roughness=0.25, showing realistic reflective surface appearance
+- **06_supersampling.png**: High-poly bunny with **Supersampling AA** combined with reflections
+- **07_supersampling.png**: Arch scene with **Supersampling AA**, shadows, and reflections

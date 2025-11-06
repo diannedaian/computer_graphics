@@ -13,6 +13,7 @@
 #include "gloo/lights/DirectionalLight.hpp"
 #include "gloo/lights/AmbientLight.hpp"
 #include "gloo/parsers/ObjParser.hpp"
+#include "gloo/Image.hpp"
 
 #include "helpers.hpp"
 
@@ -28,6 +29,7 @@ SceneParser::SceneParser() {
 
 std::unique_ptr<Scene> SceneParser::ParseScene(const std::string& filename) {
   std::string file_path = GetAssetDir() + filename;
+  scene_filename_ = filename;  // Store filename to detect scene02_cube.txt
   fs_ = std::fstream(file_path);
   if (!fs_) {
     std::cerr << "ERROR: Unable to open scene file " + file_path + "!"
@@ -103,6 +105,51 @@ void SceneParser::ParseMaterials() {
       break;
     Assert(token, "Material");
     materials_.push_back(ParseMaterial());
+  }
+
+  // Load normal map for scene02_cube.txt (material index 0)
+  if (scene_filename_.find("scene02_cube.txt") != std::string::npos) {
+    if (materials_.size() > 0) {
+      try {
+        // Load normal map - try multiple possible paths
+        std::string normal_map_path = "normal_mapping_normal_map.png";
+        std::unique_ptr<Image> normal_map;
+
+        try {
+          normal_map = Image::LoadPNG(normal_map_path, false);
+        } catch (const std::exception& e1) {
+          // Try alternate path: relative to project root
+          normal_map_path = GetProjectRootDir() + "assignment4/normal_mapping_normal_map.png";
+          try {
+            normal_map = Image::LoadPNG(normal_map_path, false);
+          } catch (const std::exception& e2) {
+            // Try one more: relative path from assignment4
+            normal_map_path = "../assignment4/normal_mapping_normal_map.png";
+            normal_map = Image::LoadPNG(normal_map_path, false);
+          }
+        }
+
+        // Convert unique_ptr to shared_ptr
+        std::shared_ptr<Image> normal_map_shared(normal_map.release());
+        materials_[0]->SetNormalMap(normal_map_shared);
+        materials_[0]->SetUseNormalMap(true);
+        std::cout << "Loaded normal map for scene02_cube.txt: " << normal_map_path << std::endl;
+      } catch (const std::exception& e) {
+        std::cerr << "Warning: Could not load normal map: " << e.what() << std::endl;
+      }
+    }
+  }
+
+  // Set roughness for bunny material (mirror material) in scene06_bunny_1k.txt
+  if (scene_filename_.find("scene06_bunny_1k.txt") != std::string::npos) {
+    if (materials_.size() > 0) {
+      // Check if material has high specular (mirror-like)
+      float specular_magnitude = glm::length(materials_[0]->GetSpecularColor());
+      if (specular_magnitude > 0.5f) {
+        materials_[0]->SetRoughness(0.25f);
+        std::cout << "Set roughness = 0.25f for bunny mirror material" << std::endl;
+      }
+    }
   }
 }
 
@@ -341,9 +388,17 @@ void SceneParser::ParseTracingComponent(SceneNode& node) {
     if (data.normals == nullptr) {
       data.normals = CalculateNormals(*data.positions, *data.indices);
     }
-    object = std::make_shared<Mesh>(std::move(data.positions),
-                                    std::move(data.normals),
-                                    std::move(data.indices));
+    // Create mesh with texture coordinates if available
+    if (data.tex_coords != nullptr) {
+      object = std::make_shared<Mesh>(std::move(data.positions),
+                                      std::move(data.normals),
+                                      std::move(data.indices),
+                                      std::move(data.tex_coords));
+    } else {
+      object = std::make_shared<Mesh>(std::move(data.positions),
+                                      std::move(data.normals),
+                                      std::move(data.indices));
+    }
   } else {
     throw std::runtime_error("Bad object type: " + type + "!");
   }

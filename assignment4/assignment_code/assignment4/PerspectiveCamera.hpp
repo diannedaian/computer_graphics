@@ -8,9 +8,10 @@
 
 #include "Ray.hpp"
 #include "CameraSpec.hpp"
+#include "Camera.hpp"
 
 namespace GLOO {
-class PerspectiveCamera {
+class PerspectiveCamera : public Camera {
  public:
   PerspectiveCamera(const CameraSpec& spec) {
     center_ = spec.center;
@@ -20,7 +21,7 @@ class PerspectiveCamera {
     horizontal_ = glm::normalize(glm::cross(direction_, up_));
   }
 
-  Ray GenerateRay(const glm::vec2& point) {
+  Ray GenerateRay(const glm::vec2& point) const override {
     float d = 1.0f / tanf(fov_radian_ / 2.0f);
     glm::vec3 new_dir =
         d * direction_ + point[0] * horizontal_ + point[1] * up_;
@@ -29,7 +30,7 @@ class PerspectiveCamera {
     return Ray(center_, new_dir);
   }
 
-  float GetTMin() const {
+  float GetTMin() const override {
     return 0.0f;
   }
 
