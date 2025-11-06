@@ -23,7 +23,27 @@ void Illuminator::GetIllumination(const LightComponent& light_component,
     dir_to_light = -directional_light_ptr->GetDirection();
     intensity = directional_light_ptr->GetDiffuseColor();
     dist_to_light = std::numeric_limits<float>::max();
-  } else {  // TODO: Implement point light.
+  } else if (light_ptr->GetType() == LightType::Point) {
+    auto point_light_ptr = static_cast<PointLight*>(light_ptr);
+
+    // Compute direction and distance from surface point to light position
+    glm::vec3 light_pos = light_component.GetNodePtr()->GetTransform().GetWorldPosition();
+    glm::vec3 to_light = light_pos - hit_pos;
+    dist_to_light = glm::length(to_light);
+
+    // Avoid divide-by-zero for very small distances
+    const float epsilon = 1e-6f;
+    if (dist_to_light < epsilon) {
+      dist_to_light = epsilon;
+    }
+    dir_to_light = glm::normalize(to_light);
+
+    // Compute intensity using inverse square law: I / (alpha * d^2)
+    float alpha = point_light_ptr->GetAttenuation().x;
+    glm::vec3 light_color = point_light_ptr->GetDiffuseColor();
+    float d_squared = dist_to_light * dist_to_light;
+    intensity = light_color / (alpha * d_squared);
+  } else {
     throw std::runtime_error(
         "Unrecognized light type when computing "
         "illumination");
